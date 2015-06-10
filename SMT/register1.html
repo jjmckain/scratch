@@ -13,12 +13,35 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="form-group">
-					<label for="First_Name">FIRST NAME</label> <input type="text" class="form-control" id="First_Name" name="reg_enc|FIRST_NM|7f000001427b18842a834a598cdeafa" placeholder="first name" value="James">
+					<label for="First_Name">LEGAL FIRST NAME</label> <input type="text" class="form-control" id="First_Name" name="reg_enc|FIRST_NM|7f000001427b18842a834a598cdeafa" placeholder="legal first name" value="James">
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="form-group">
-					<label for="Last_Name">LAST NAME</label> <input type="text" class="form-control" id="Last_Name" name="reg_enc|LAST_NM|7f000001447b18842a834a598cdeafa" placeholder="last name" value="McKain">
+					<label for="~Middle_Name">MIDDLE NAME</label> <input type="text" class="form-control" id="~Middle_Name" name="reg_|MIDDLE_NM|7f000001437b18842a834a598cdeafa" placeholder="middle name" value="Joseph">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label for="Last_Name">LEGAL LAST NAME</label> <input type="text" class="form-control" id="Last_Name" name="reg_enc|LAST_NM|7f000001447b18842a834a598cdeafa" placeholder="legal last name" value="McKain">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label for="Degree">DEGREE</label> 
+					<div class="dropdown">
+						<select name="reg_||DSI_DEGREE" class="form-control">
+							<option value=""></option>
+							<option value="MD" selected="selected">MD</option>
+							<option value="DO">DO</option>
+							<option value="DPM">DPM</option>
+							<option value="DVM">DVM</option>
+							<option value="DMD">DMD</option>
+							<option value="OTHER">OTHER</option>
+							</select>
+					</div>
 				</div>
 			</div>
 		</div>

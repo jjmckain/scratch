@@ -486,7 +486,9 @@ button.close:hover,button.close:active,button.close:focus {
 }
 #signin .modal-footer a { font-weight: normal }
 
-#register1 .checkbox label {
+#register1 .checkbox label,
+#register3 .checkbox label,
+#register4 .checkbox label {
     font-weight:100
 }
 
@@ -585,6 +587,30 @@ ul.register-specialty-one li,ul.register-specialty-two li,ul.register-sub-one li
 }
 
 .help-block.password { font-size: 9pt; margin-top: 1px; }
+
+/* ==========================================================================
+	$DSI phase 2 registration modals - added 06.10.15 - JM
+   ========================================================================== */
+.pad3Top { padding-top: 3px; }
+.pad10Top { padding-top: 10px; }
+.pad25Top { padding-top: 25px; }
+.mar0Top { margin-top: 0 !important; } 
+.mar10Top { margin-top: 10px !important; } 
+.mar10Bot { margin-bottom: 10px !important; }
+.no-gutter { margin-right: 0 !important; padding-right: 0 !important; margin-left: 0 !important; padding-left: 0 !important; }
+.no-gutter-left  { margin-left: 0 !important; padding-left: 0 !important; }
+.no-gutter-right  { margin-right: 0 !important; padding-right: 0 !important; }
+.bodyFont { color: #4D4F53 !important }
+
+.page3registration .form-group label { margin-top: 0 !important; }
+.page3registration .form-group.military .checkbox { margin: 0; }
+.page3registration #npiNumber span.glyphicon { margin-top: 3px; }
+.page3registration .row.npi .form-group { margin-bottom: 5px; }
+.form-control.file {width: auto; border: none; background-color: inherit; box-shadow: none }
+
+.warning { color: #88272E; font-weight: bold; }
+p.warning { margin-top: 10px; }
+
 
 /* ==========================================================================
    $Navigation

@@ -1,0 +1,270 @@
+<div class="modal-body page3registration">
+	<div class="row">
+		<div class="col-xs-12">
+			<p>Optional text area. Might say something like this about why DePuy
+				Synthes needs this information.</p>
+		</div>
+	</div>
+	<div class="row hidden">
+		<div class="col-xs-12" id="errMsg"></div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<div class="form-group">
+				<label>COUNTRY</label>
+				<div class="dropdown">
+					<select name="reg_||DSI_COUNTRY" id="~country" class="form-control" onchange="showCountryFields(this.value);">
+						<option value="US" selected="selected">United States</option>
+						<option value="CA">Canada</option>
+						</select>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 npiInput ">
+			<div class="row npi" id="npiData">
+				<div class="col-xs-12">
+					<div class="form-group">
+						<label>IDENTIFICATION NUMBER</label>
+						<div class="dropdown">
+							<select name="reg_||DSI_IDNO_TYPE" class="form-control" onchange="showNPIInput(this.value);">
+								<option value="npiNumber" selected="selected">NPI Number</option>
+								<option value="slNumber">State License Number</option>
+								<option value="noNumber">I don't have either</option>
+								</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row npiInput " id="npiNumber">
+				<div class="col-xs-10 no-gutter-right">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="10-digit NPI Number" name="reg_||DSI_IDNO_NPI" value="npi">
+					</div>
+				</div>
+				<div class="col-xs-2 pad3Top">
+					<a href="javascript:leaveSite('http://www.npinumberlookup.org', true);"><span class="glyphicon icon-search"></span></a>
+				</div>
+			</div>
+			<div class="row npiInput hidden" id="slNumber">
+				<div class="col-xs-5 no-gutter-right">
+					<div class="dropdown">
+						<select class="form-control" id="~licState" name="reg_||DSI_IDNO_STATE"></select>
+					</div>
+				</div>
+				<div class="col-xs-7">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="License Number" name="reg_||DSI_IDNO_VAL" value="">
+					</div>
+				</div></div>
+			<div class="row npiInput hidden" id="noNumber">
+				<div class="col-xs-12">
+					<div class="form-group">
+						<textarea class="form-control" placeholder="Why don't you have an NPI Number or State License?" name="reg_||DSI_IDNO_OTHER"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="row">
+		<div class="col-xs-12">
+			<label class="dark">ACADEMIC MEDICAL CENTER</label>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="form-group">
+				<label>NAME</label>
+				<input type="text" class="form-control" placeholder="Medical Center Name" name="reg_||DSI_ACAD_NM" value="med ctr">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="form-group">
+				<label>STREET ADDRESS</label>
+				<input type="text" class="form-control" placeholder="Medical Center Address" name="reg_||DSI_ACAD_ADDR" value="2710 Westmore Dr">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4 col-sm-6">
+			<div class="form-group">
+				<label>CITY</label>
+				<input type="text" class="form-control" placeholder="City" name="reg_||DSI_ACAD_CITY" value="Fort Wayne">
+			</div>
+		</div>
+		<div class="col-xs-4 col-sm-3">
+			<div class="form-group">
+				<label id="acadStateLabel">STATE</label>
+				<div class="dropdown">
+					<select class="form-control" id="~acadState" name="reg_||DSI_ACAD_STATE"></select>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4 col-sm-3">
+			<div class="form-group">
+				<label id="acadZipLabel">ZIP CODE</label>
+				<input type="text" class="form-control" placeholder="Zip Code" name="reg_||DSI_ACAD_ZIP" value="46845">
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+			<div class="col-xs-12">
+				<div class="checkbox">
+					<label class="input input_checked"> 
+						<input class="sr-only" type="radio" name="reg_||DSI_PROG_ELIGIBLE" value="eligible" checked="checked">
+						<span class="styled_radio"></span>
+							I understand my academic institution/department compliance policies and I
+							am <strong>fully eligible</strong> to participate in the DePuy Synthes
+							Future Leaders program including value transfers. (i.e, textbooks, etc)
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="checkbox">
+					<label class="input"> 
+						<input class="sr-only" type="radio" name="reg_||DSI_PROG_ELIGIBLE" value="ineligible">
+						<span class="styled_radio"></span> I understand my academic institution/department compliance policies and I
+							am <strong>not eligible</strong> to participate in the DePuy Synthes
+							Future Leaders program including value transfers. (i.e, textbooks, etc).
+					</label>
+				</div>
+			</div>
+		</div>
+	
+
+		<div class="row mar10Top" id="militaryRow">
+			<div class="col-xs-12">
+				<div class="form-group military">
+					<label>ARE YOU WORKING IN A MILITARY HOSPITAL?</label>
+					<div class="row">
+						<div class="col-xs-2">
+							<div class="checkbox">
+								<label class="bodyFont input input_checked">
+									<input class="sr-only" type="radio" name="reg_||DSI_MIL_HOSP" value="yes" checked="checked" onclick="showProffer(true);">
+									<span class="styled_radio"></span> Yes
+								</label>
+							</div>
+						</div>
+						<div class="col-xs-2">
+							<div class="checkbox">
+								<label class="bodyFont input">
+									<input class="sr-only" type="radio" name="reg_||DSI_MIL_HOSP" value="no" onclick="showProffer(false);">
+									<span class="styled_radio"></span> No
+								</label>
+							</div>
+						</div>
+					</div>
+					<div id="profferNotice" class="row hidden">
+						<div class="col-xs-12">
+							<p class="warning">In order to participate in the redemption program
+								your ethics officer must sign a Proffer Letter. A DS Program Manager
+								will contact you with further details.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="row" id="pgyRow">
+			<div class="col-xs-6 col-sm-4">
+					<div class="form-group">
+						<label>YEAR IN RESIDENCY</label>
+						<div class="dropdown">
+							<select name="reg_||DSI_PGY" class="form-control">
+								<option value="">PGY</option>
+								<option value="1">1</option>
+								<option value="2" selected="selected">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-1 col-sm-2"></div>
+			<div class="col-xs-5">
+				<div class="form-group">
+					<label>GRADUATION DATE</label> 
+					<div class="row">
+						<div class="col-xs-5 col-sm-4 no-gutter-right">
+							<select name="gradMo" class="form-control">
+								<option value=""></option>
+								<option value="1">Jan</option>
+								<option value="2">Feb</option>
+								<option value="3">Mar</option>
+								<option value="4">Apr</option>
+								<option value="5">May</option>
+								<option value="6">Jun</option>
+								<option value="7">Jul</option>
+								<option value="8">Aug</option>
+								<option value="9">Sep</option>
+								<option value="10">Oct</option>
+								<option value="11" selected="selected">Nov</option>
+								<option value="12">Dec</option>
+								</select>
+						</div>
+						<div class="col-xs-6 col-sm-5">
+							<select name="gradYr" class="form-control">
+								<option value=""></option>
+								<option value="2015">2015</option>
+								<option value="2016">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020" selected="selected">2020</option>
+								<option value="2021">2021</option>
+								<option value="2022">2022</option>
+								<option value="2023">2023</option>
+								<option value="2024">2024</option>
+								<option value="2025">2025</option>
+								</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="row pad10Top">
+			<div class="col-xs-12">
+				<label class="dark">MY ASSIGNMENTS</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p>As a Chief Resident, you may assign content and curricula to residents in 
+					your program through the My Assignments section. <a href="javascript:;">Learn more.</a></p>
+				<p class="pad10Top">Would you like to participate?</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="checkbox mar0Top">
+					<label class="input input_checked">
+						<input class="sr-only" type="radio" name="reg_||DSI_MY_ASSIGNMENTS" value="yes" checked="checked">
+						<span class="styled_radio"></span> Yes
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="checkbox mar0Top">
+					<label class="input">
+						<input class="sr-only" type="radio" name="reg_||DSI_MY_ASSIGNMENTS" value="no">
+						<span class="styled_radio"></span> No
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>

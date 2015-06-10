@@ -1,0 +1,158 @@
+<div class="modal-body">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="hide" id="errMsg"></p>
+				<div class="form-group">
+					<label>PROFESSION</label><br>
+					<select name="reg_||c0a80241b71c9d40a59dbd6f4b621260" class="form-control">
+						<option value=""></option>
+						<option value="Resident">Resident</option>
+						<option value="Fellow">Fellow</option>
+						<option value="Attending/Private Practice">Attending/Private Practice</option>
+						<option value="Allied Health (inc. PA/CST)" selected="selected">Allied Health (inc. PA/CST)</option>
+						<option value="Nurse">Nurse</option>
+						<option value="Hospital Administration">Hospital Administration</option>
+						<option value="Professional non-J&amp;J">Professional non-J&amp;J</option>
+						<option value="Business Professional">Business Professional</option>
+						</select>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="radio-group">
+					<label>SPECIALTY</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Acute Care Surgery" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Acute Care Surgery</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Anesthesiology" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Anesthesiology</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Diagnostic Radiology" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Diagnostic Radiology</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="General Surgery" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> General Surgery</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Interventional Radiology" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Interventional Radiology</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Neurosurgery" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Neurosurgery</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Neurology" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Neurology</label>
+						</div>
+				</div>
+			<div class="col-sm-6">
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Oral and Maxillofacial Surgery" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Oral and Maxillofacial Surgery</label>
+						</div>
+				<div class="radio">
+							<label class="input_checked"> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Orthopaedic Surgery" onclick="dsiRegShowSpecialties(this);" checked="checked">
+								<span class="styled_radio"></span> Orthopaedic Surgery</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Otolaryngology" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Otolaryngology</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Pain Management" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Pain Management</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Physiatry" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Physiatry</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Plastic Surgery" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Plastic Surgery</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="radio" name="reg_||c0a80241b71d27b038342fcb3ab567a0" value="Veterinary Medicine" onclick="dsiRegShowSpecialties(this);">
+								<span class="styled_radio"></span> Veterinary Medicine</label>
+						</div>
+				</div>
+		</div>
+		
+		<div class="row subspecialty heading hide">
+			<div class="col-xs-12">
+				<div class="radio-group">
+					<label>SUB-SPECIALTY</label>
+				</div>
+			</div>
+		</div>
+		<div class="row subspecialty hide ortho">
+			<div class="col-sm-6">
+				<div class="radio">
+							<label> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Joint Reconstruction">
+								<span class="styled_radio"></span> Joint Reconstruction</label>
+						</div>
+				<div class="radio">
+							<label class="input_checked"> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Sports Medicine" checked="checked">
+								<span class="styled_radio"></span> Sports Medicine</label>
+						</div>
+				<div class="radio">
+							<label class="input_checked"> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Trauma" checked="checked">
+								<span class="styled_radio"></span> Trauma</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Spine">
+								<span class="styled_radio"></span> Spine</label>
+						</div>
+				<div class="radio">
+							<label> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Hip and Pelvis">
+								<span class="styled_radio"></span> Hip and Pelvis</label>
+						</div>
+				</div>
+			<div class="col-sm-6">
+			<div class="radio Pedia">
+						<label class="input_checked"> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Pediatric" checked="checked">
+							<span class="styled_radio"></span> Pediatric</label>
+					</div>
+			<div class="radio Foot ">
+						<label class="input_checked"> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Foot and Ankle" checked="checked">
+							<span class="styled_radio"></span> Foot and Ankle</label>
+					</div>
+			<div class="radio Hand ">
+						<label> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Hand and Wrist">
+							<span class="styled_radio"></span> Hand and Wrist</label>
+					</div>
+			<div class="radio Gener">
+						<label> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="General">
+							<span class="styled_radio"></span> General</label>
+					</div>
+			<div class="radio Shoul">
+						<label> <input class="sr-only" type="checkbox" name="reg_||c0a80241fe190db1672ee7fc804922b1" value="Shoulder and Elbow">
+							<span class="styled_radio"></span> Shoulder and Elbow</label>
+					</div>
+			</div>
+		</div>
+		<div class="row subspecialty hide neuro">
+			<div class="col-sm-6">
+				<div class="radio Crani">
+							<label> <input class="sr-only" type="checkbox" name="reg_||c0a802378dc21c56c15b1c38f9c3831d" value="Cranial">
+								<span class="styled_radio"></span> Cranial</label>
+						</div>
+				<div class="radio Spine">
+							<label> <input class="sr-only" type="checkbox" name="reg_||c0a802378dc21c56c15b1c38f9c3831d" value="Spine">
+								<span class="styled_radio"></span> Spine</label>
+						</div>
+				</div>
+			<div class="col-sm-6">
+			</div>
+		</div>
+		</div>

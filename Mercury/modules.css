@@ -11,7 +11,7 @@ body {
 }
 
 .main_wrapper {
-    background:url(../images/nav-tile.jpg) repeat left top
+    background:url(../../img/nav-tile.jpg) repeat left top
 }
 
 .left_column {
@@ -438,7 +438,7 @@ button.close:hover,button.close:active,button.close:focus {
     padding:20px
 }
 /** inner-scolling with buttons at bottom - filter boxes **/
-.modal.filterBox .modal-body { 
+.modal.filterBox .modal-body {
 	padding: 20px 20px 0 20px;
 	overflow-y: auto;
 	max-height: calc(79vh);
@@ -478,7 +478,7 @@ button.close:hover,button.close:active,button.close:focus {
 }
 #signin .modal-dialog { width: 340px !important; max-width: 95% !important; }
 #signin .modal-dialog .checkbox { margin-bottom: 30px; }
-#signin .modal-footer { 
+#signin .modal-footer {
 	padding: 15px 20px 15px 20px;
 	border-top: 2px solid #A89968;
 	text-align: left;
@@ -657,7 +657,7 @@ nav.main_nav li.active .glyphicon {
 
 .mobile_header {
     padding:10px 15px;
-    background:url(../images/logo-mobile.png) no-repeat -15px 0 #FFF
+    background:url(../../img/logo-mobile.png) no-repeat -15px 0 #FFF
 }
 
 .mobile_header .login.pull-right {
@@ -846,14 +846,14 @@ ul.nursing-menu.list-unstyled.nav_list li:nth-last-child(4) {
     -webkit-box-shadow:-2px 2px 3px 0 rgba(000,000,000,.2)!important;
     -moz-box-shadow:-2px 2px 3px 0 rgba(000,000,000,.2)!important;
     box-shadow:-2px 2px 3px 0 rgba(000,000,000,.2)!important
-} 
+}
 
 ul.veterinary-menu.list-unstyled.nav_list li:nth-last-child(5) {
 	border-top:none;
     -webkit-box-shadow:-2px 2px 3px 0 rgba(000,000,000,.2)!important;
     -moz-box-shadow:-2px 2px 3px 0 rgba(000,000,000,.2)!important;
     box-shadow:-2px 2px 3px 0 rgba(000,000,000,.2)!important
-} 
+}
 
 body ul.list-unstyled.nav_list li:nth-last-child(2) {
     border-top:none;
@@ -873,7 +873,7 @@ body ul.list-unstyled.nav_list li:nth-last-child(2) {
 }
 
 .sub-nav a {
-	padding:10px!important;	
+	padding:10px!important;
 }
 
 .sub-nav a span {
@@ -924,7 +924,7 @@ ul.nursing-menu.list-unstyled.nav_list li:nth-last-child(4):hover  {
 .mobile-nav {
     width:100%;
     border-radius:0;
-    background:url(../images/nav-tile.jpg) repeat left top;
+    background:url(../../img/nav-tile.jpg) repeat left top;
     padding:0
 }
 
@@ -1146,7 +1146,7 @@ a.nav_calendar .glyphicon.icon-cal {
     z-index:0;
     margin-top: -80px;
     margin-left: 0;
-	
+
 }
 .smtContentWrapper .hero_text .date-cal-row { margin: 0 }
 .smtContentWrapper .hero_text .col-xs-4 {padding: 0 }
@@ -2525,7 +2525,7 @@ li.nav-home,li.nav-calendar {
 .right_column {
     background:#E4E4E2;
     background-size:contain;
-    background:url(../images/nav-tile.jpg) repeat left top
+    background:url(../../img/nav-tile.jpg) repeat left top
 }
 
 .mobile_header {
